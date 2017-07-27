@@ -10,20 +10,68 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-  <h1>Savvy Bookstore</h1>
-  <h2>The Bookstore that the Savviest Bookworms Use!</h2>
-
-  <form action = "" method="get">
-    <p><label for="title">Title:</label>
-    <input id="title" type="text" name="title"></p>
-      <p><label for="author">Author:</label>
-      <input id="author" type="text" name="author"></p>
-      <p><label for="price">Price:</label>
-        <input id="price" type="text" name="price"></p>
-          <p><label for="description">Description:</label>
-            <input id="description" type="text" name="description"></p>
-  </form>
+  <header>
+    <h1>Savvy Bookstore</h1>
+    <h2>The Bookstore that the Savviest Bookworms Use!</h2>
+  </header>
+  <nav>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+  <div id="main">
+    <div id ="book1">
+        <div id="bookid"><p>Book ID</p></div>
+        <div id="name"><p>Savvy Coders July 2017</p></div>
+        <div id="author"><p>Savvy Coders</p></div>
+        <div id="price"><p>Price</p></div>
+        <div id="picture"><img src="https://github.com/camilopayan/student-showcase/blob/master/images/class.jpg?raw=true" alt="Image of Book" style="width: 50%"></div>
+        <div id="notes">
+          <ul>
+            <li>Awesome coders July 2017</li>
+            <li>camilo, chloek, ciara.l.nelson, kdub, ltremblay, wang, wrawlings</li>
+            <li>Bacon ipsum dolor amet flank meatball venison ground round short loin, ball tip prosciutto pancetta.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id ="book2">
+      <div id="bookid"><p>Book ID</p></div>
+      <div id="name"><p>Name</p></div>
+      <div id="author"><p>Author</p></div>
+      <div id="price"><p>Price</p></div>
+      <div id="picture"><img src="" alt="Image of Book"></div>
+      <div id="notes">
+        <ul>
+          <li>Desc 1</li>
+          <li>Desc 2</li>
+          <li>Desc 3</li>
+        </ul>
+      </div>
+    </div>
+    <form action = "" method="get">
+      <p>
+        <label for="title">Title:</label>
+        <input id="title" type="text" name="title">
+      </p>
+      <p>
+        <label for="author">Author:</label>
+        <input id="author" type="text" name="author">
+      </p>
+      <p>
+        <label for="price">Price:</label>
+        <input id="price" type="text" name="price">
+      </p>
+      <p>
+        <label for="description">Description:</label>
+        <input id="description" type="text" name="description">
+      </p>
+    </form>
+  </div>
+  <footer>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="script/script.js" charset="utf-8"></script>
 </body>
