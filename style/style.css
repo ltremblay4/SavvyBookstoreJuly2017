@@ -1,0 +1,42 @@
+/*-------------homepage-----------------*/
+
+body {
+  background-color: white;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+header {
+  background-color: black;
+}
+
+h1, h2 {
+  color: white;
+  }
+
+h1 {
+  font-family: 'Special Elite', cursive;
+  font-size: 400%;
+  }
+
+nav {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+#nav li {
+  padding: 0 30px;
+}
+
+#book1 {
+  border: 1px solid black;
+}
+
+#book2 {
+  border: 1px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
