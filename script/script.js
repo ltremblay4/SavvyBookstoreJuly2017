@@ -37,7 +37,7 @@ var book3 = {
     "A New York Times Bestseller",
   ]
 }
-$("#book1.name").text(book1.name)// Javascript!
-$("book1.picture").img()
-$("#book2.name").text(book2.name)
-
+$("#book1 .name").text(book1.name)
+$("#book1 .author").text(book1.author)
+$("#book1 .price").text(book1.price)
+$("#book1 .picture>img").attr(book1.picture_url)
