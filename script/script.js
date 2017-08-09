@@ -41,3 +41,23 @@ $("#book1 .name").text(book1.name)
 $("#book1 .author").text(book1.author)
 $("#book1 .price").text(book1.price)
 $("#book1 .picture>img").attr(book1.picture_url)
+
+var add_to_page = function(book1) {
+  $('#content').append($("<div id='book" + book1.id + "'>").html( $('<div class=name>').text(book1.name)))
+}
+
+var count = 2;
+
+    $("form").on("submit", function(event) {
+        event.preventDefault();
+
+        var data = $(this).serializeArray();
+        var formObject = {};
+
+        formObject.id = ++count;
+        data.forEach( function(field){
+            formObject[field.name] = field.value;
+        } );
+
+        append_to_page(formObject);
+    });
