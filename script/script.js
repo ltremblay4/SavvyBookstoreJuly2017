@@ -44,7 +44,7 @@ var add_to_page = function(book1) {
   +'<div class="author">' + "by " + book1.author + '</div>'
   + '<img class="bookpic" src=' + book1.picture_url + ">"
   + '<div class="price">' + '$' + book1.price + '</div>'
-  + '<div class="selling">' + book1.selling_points[0] + '</div>')))
+  + '<div class="selling">' + book1.selling_points[1] + '</div>')))
 }
 
 add_to_page(book1);
@@ -64,5 +64,7 @@ var count = 2;
             formObject[field.name] = field.value;
         } );
 
-        append_to_page(formObject);
-  });
+        add_to_page(formObject);
+    });
+
+  
