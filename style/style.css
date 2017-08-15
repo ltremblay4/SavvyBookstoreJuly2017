@@ -28,11 +28,41 @@ nav {
   padding: 0 30px;
 }
 
+#main {
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1em;
+}
+
+.price {
+  margin: .5em;
+}
+
+.selling {
+  font-style: italic;
+}
+
+.bookpic {
+  width:25%;
+  height:auto;
+  margin: auto;
+  display: block;
+}
+
 #book1 {
   border: 1px solid black;
 }
 
 #book2 {
+  border: 1px solid black;
+}
+
+#book3 {
   border: 1px solid black;
 }
 
