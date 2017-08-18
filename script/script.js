@@ -33,7 +33,7 @@ var book3 = {
   "price": '$' + 6.83,
   "selling_points": [
     "A Newberry Honor Book",
-    "An Oprah's Book Club Kids Rreading List Pick",
+    "An Oprah's Book Club Kids Reading List Pick",
     "A New York Times Bestseller",
   ]
 }
@@ -46,6 +46,7 @@ var add_to_page = function( obj ) {
   var $contentNode = $('#' + contentID);
 
   var sellingPointsListItems = '';
+
   obj.selling_points.forEach( function(sellingPoint){
     sellingPointsListItems += "<li>" + sellingPoint + "</li>";
   } );
@@ -55,7 +56,6 @@ var add_to_page = function( obj ) {
   $contentNode.append($('<div class="author">').text(obj.author));
   $contentNode.append($('<div class ="bookpicture">').html("<img class='bookpic' src='" + obj.picture_url + "'>"));
   $contentNode.append($('<div class="price">').text(obj.price));
-
   $contentNode.append($('<div class="selling">').html("<ol>" + sellingPointsListItems + '</ol>'));
 };
 
